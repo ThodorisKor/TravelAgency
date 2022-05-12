@@ -57,7 +57,6 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:contentDescription="@string/app_name"
-                    android:contextClickable="true"
                     android:scaleX="1.7"
                     android:scaleY="1.2"
                     android:src="@drawable/la" />
@@ -373,7 +372,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="327dp"
                 android:clipToPadding="false"
-                android:contextClickable="false"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
@@ -395,7 +393,8 @@
                     android:id="@+id/imageView11"
                     android:layout_width="wrap_content"
                     android:layout_height="37dp"
-                    android:src="@drawable/olympic" />
+                    android:src="@drawable/olympic"
+                    android:clickable="true"/>
 
                 <ImageView
                     android:id="@+id/img3"
