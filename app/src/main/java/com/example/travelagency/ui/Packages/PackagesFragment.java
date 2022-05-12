@@ -18,8 +18,8 @@ public class PackagesFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        PackagesViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(PackagesViewModel.class);
+       // PackagesViewModel slideshowViewModel =
+                //new ViewModelProvider(this).get(PackagesViewModel.class);
 
         binding = FragmentPackagesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();

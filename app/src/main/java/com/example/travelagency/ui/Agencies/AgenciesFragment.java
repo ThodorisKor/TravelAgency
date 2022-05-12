@@ -18,8 +18,8 @@ public class AgenciesFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        AgenciesViewModel homeViewModel =
-              new ViewModelProvider(this).get(AgenciesViewModel.class);
+       // AgenciesViewModel homeViewModel =
+             // new ViewModelProvider(this).get(AgenciesViewModel.class);
 
         binding = FragmentAgenciesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();

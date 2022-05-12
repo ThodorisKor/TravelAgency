@@ -4,44 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@color/design_default_color_primary"
+    android:background="#041D4E"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:scaleY="1.2"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="321dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="25dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:layout_margin="@dimen/cardview_compat_inset_shadow"
+        android:id="@+id/imageView15"
+        android:layout_width="302dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="6dp"
+        android:scaleX="2.6"
+        android:scaleY="1.3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="59dp"
-            android:layout_height="47dp"
-            android:contentDescription="@string/nav_header_desc"
-            android:paddingTop="@dimen/nav_header_vertical_spacing"
-            android:paddingBottom="15px"
-            app:srcCompat="@drawable/header" />
-
-        <TextView
-            android:layout_width="248dp"
-            android:layout_height="match_parent"
-            android:paddingTop="@dimen/nav_header_vertical_spacing"
-            android:text="@string/nav_header_title"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#121111"
-            android:textSize="24sp" />
-    </LinearLayout>
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/travelagency2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

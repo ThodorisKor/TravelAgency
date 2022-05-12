@@ -18,8 +18,8 @@ public class DestinationsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DestinationsViewModel galleryViewModel =
-                new ViewModelProvider(this).get(DestinationsViewModel.class);
+       // DestinationsViewModel galleryViewModel =
+                //new ViewModelProvider(this).get(DestinationsViewModel.class);
 
         binding = FragmentDestinationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
