@@ -21,8 +21,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="327sp"
-                android:clickable="true"
-                android:clipToPadding="true"
+                android:clickable="false"
+                android:clipToPadding="false"
+                android:contextClickable="false"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
