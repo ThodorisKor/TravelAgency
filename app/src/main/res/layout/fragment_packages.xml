@@ -19,12 +19,13 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
+                android:id="@+id/card1"
                 android:layout_width="match_parent"
                 android:layout_height="327sp"
+                android:clickable="true"
                 android:clipToPadding="false"
                 android:contextClickable="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
@@ -114,7 +115,6 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:contentDescription="@string/app_name"
-                    android:contextClickable="true"
                     android:scaleX="1.7"
                     android:src="@drawable/barcelona" />
 
@@ -170,8 +170,6 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:contentDescription="@string/app_name"
-
-                    android:contextClickable="true"
                     android:scaleX="2"
                     android:src="@drawable/london" />
 
@@ -229,7 +227,6 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:contentDescription="@string/app_name"
-                    android:contextClickable="false"
                     android:scaleX="2"
                     android:scaleY="1.5"
                     android:src="@drawable/paris" />
@@ -287,8 +284,6 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:contentDescription="@string/app_name"
-                    android:contextClickable="true"
-
                     android:scaleX="2"
                     android:src="@drawable/london" />
 
@@ -346,7 +341,6 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:contentDescription="@string/app_name"
-                    android:contextClickable="false"
                     android:scaleX="2"
                     android:scaleY="1.5"
                     android:src="@drawable/paris" />
@@ -406,7 +400,6 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:contentDescription="@string/app_name"
-                    android:contextClickable="true"
                     android:scaleX="1.7"
                     android:src="@drawable/bahamas"
                     tools:ignore="ImageContrastCheck" />
@@ -464,7 +457,6 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:contentDescription="@string/app_name"
-                    android:contextClickable="true"
                     android:scaleX="1.7"
                     android:scaleY="1.2"
                     android:src="@drawable/la" />
@@ -522,7 +514,6 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:contentDescription="@string/app_name"
-                    android:contextClickable="true"
                     android:scaleX="1.7"
                     android:src="@drawable/barcelona" />
 
