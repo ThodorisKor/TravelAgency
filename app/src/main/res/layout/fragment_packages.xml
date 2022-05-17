@@ -77,12 +77,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
+                android:id="@+id/card2"
                 android:layout_width="match_parent"
                 android:layout_height="327sp"
+                android:clickable="true"
                 android:clipToPadding="false"
                 android:contextClickable="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
@@ -133,11 +134,12 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
+                android:id="@+id/card3"
                 android:layout_width="match_parent"
                 android:layout_height="327sp"
                 android:animationCache="false"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
@@ -188,12 +190,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
+                android:id="@+id/card4"
                 android:layout_width="match_parent"
                 android:layout_height="327sp"
+                android:clickable="true"
                 android:clipToPadding="false"
                 android:contextClickable="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
@@ -247,11 +250,12 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
+                android:id="@+id/card5"
                 android:layout_width="match_parent"
                 android:layout_height="327dp"
                 android:animationCache="false"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
@@ -302,12 +306,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
+                android:id="@+id/card6"
                 android:layout_width="match_parent"
                 android:layout_height="327dp"
+                android:clickable="true"
                 android:clipToPadding="false"
                 android:contextClickable="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
@@ -361,11 +366,12 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
+                android:id="@+id/card7"
                 android:layout_width="match_parent"
                 android:layout_height="327dp"
+                android:clickable="true"
                 android:clipToPadding="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
@@ -387,8 +393,8 @@
                     android:id="@+id/imageView11"
                     android:layout_width="wrap_content"
                     android:layout_height="37dp"
-                    android:src="@drawable/olympic"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:src="@drawable/olympic" />
 
                 <ImageView
                     android:id="@+id/img3"
@@ -419,12 +425,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
+                android:id="@+id/card8"
                 android:layout_width="match_parent"
                 android:layout_height="327dp"
+                android:clickable="true"
                 android:clipToPadding="false"
                 android:contextClickable="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
@@ -476,12 +483,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
+                android:id="@+id/card9"
                 android:layout_width="match_parent"
                 android:layout_height="327dp"
+                android:clickable="true"
                 android:clipToPadding="false"
                 android:contextClickable="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="20dp"
