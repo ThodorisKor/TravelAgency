@@ -19,7 +19,7 @@ import com.example.travelagency.R;
 import com.example.travelagency.databinding.FragmentFormBinding;
 import com.example.travelagency.databinding.FragmentPackagesBinding;
 
-public class form extends Fragment {
+public class FormFragment extends Fragment {
 
     private FragmentFormBinding binding;
     public View onCreateView(@NonNull LayoutInflater inflater,

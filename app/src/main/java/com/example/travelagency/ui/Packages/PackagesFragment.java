@@ -19,7 +19,8 @@ import com.example.travelagency.R;
 
 import com.example.travelagency.databinding.FragmentFormBinding;
 import com.example.travelagency.databinding.FragmentPackagesBinding;
-import com.example.travelagency.ui.form.form;
+import com.example.travelagency.ui.form.FormFragment;
+import com.example.travelagency.ui.form.FormFragment;
 
 public class PackagesFragment extends Fragment {
     private FragmentPackagesBinding binding;
@@ -50,7 +51,7 @@ public class PackagesFragment extends Fragment {
             public void onClick(View view) {
                 //Toast.makeText(getActivity(),cardView.isPressed(),Toast.LENGTH_SHORT).show();
                 System.out.println(card1.isPressed());
-                Fragment frag = new form();
+                Fragment frag = new FormFragment();
                 replaceFragment(frag);
                 //FragmentFormBinding.bind(View.inflate(bd.navForm,R.layout.fragment_form, M\));
             }
@@ -62,49 +63,49 @@ public class PackagesFragment extends Fragment {
         card2 = binding.card2;
         card2.setOnClickListener(view -> {
             System.out.println(card2.isPressed());
-            Fragment frag = new form();
+            Fragment frag = new FormFragment();
             replaceFragment(frag);
         });
         card3 = binding.card3;
         card3.setOnClickListener(view -> {
             System.out.println(card3.isPressed());
-            Fragment frag = new form();
+            Fragment frag = new FormFragment();
             replaceFragment(frag);
         });
         card4 = binding.card4;
         card4.setOnClickListener(view -> {
             System.out.println(card4.isPressed());
-            Fragment frag = new form();
+            Fragment frag = new FormFragment();
             replaceFragment(frag);
         });
         card5 = binding.card5;
         card5.setOnClickListener(view -> {
             System.out.println(card5.isPressed());
-            Fragment frag = new form();
+            Fragment frag = new FormFragment();
             replaceFragment(frag);
         });
         card6 = binding.card6;
         card6.setOnClickListener(view -> {
             System.out.println(card6.isPressed());
-            Fragment frag = new form();
+            Fragment frag = new FormFragment();
             replaceFragment(frag);
         });
         card7 = binding.card7;
         card7.setOnClickListener(view -> {
             System.out.println(card7.isPressed());
-            Fragment frag = new form();
+            Fragment frag = new FormFragment();
             replaceFragment(frag);
         });
         card8 = binding.card8;
         card8.setOnClickListener(view -> {
             System.out.println(card8.isPressed());
-            Fragment frag = new form();
+            Fragment frag = new FormFragment();
             replaceFragment(frag);
         });
         card9 = binding.card9;
         card9.setOnClickListener(view -> {
             System.out.println(card9.isPressed());
-            Fragment frag = new form();
+            Fragment frag = new FormFragment();
             replaceFragment(frag);
         });
         return root;
