@@ -97,7 +97,6 @@
 
                 <EditText
                     android:hint="@string/packagecode"
-
                     android:id="@+id/packagecode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
