@@ -29,6 +29,7 @@ public class form extends Fragment {
         View root = binding.getRoot();
         Toast.makeText(getActivity(),"MIAOU",Toast.LENGTH_SHORT).show();
         return root;
+
     }
 
     @Override

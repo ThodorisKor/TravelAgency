@@ -32,6 +32,7 @@ public class PackagesFragment extends Fragment {
     private CardView card7;
     private CardView card8;
     private CardView card9;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
