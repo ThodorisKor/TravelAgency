@@ -5,7 +5,6 @@ import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Package",
-        primaryKeys = {"id"},
         foreignKeys = {
         @ForeignKey(entity = Agency.class,
         parentColumns = "id",
@@ -79,7 +78,7 @@ public class Package {
         this.date = date;
     }
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 
