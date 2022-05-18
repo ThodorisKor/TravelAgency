@@ -22,4 +22,8 @@
     <string name="Email">Email</string>
     <string name="Phone">Phone</string>
     <string name="packagecode">Package Code</string>
+
+    <string name="gender">please check your gender</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
 </resources>
