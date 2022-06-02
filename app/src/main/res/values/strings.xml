@@ -23,7 +23,23 @@
     <string name="Phone">Phone</string>
     <string name="packagecode">Package Code</string>
 
-    <string name="gender">please check your gender</string>
+    <string name="gender">please select your gender</string>
     <string name="male">male</string>
     <string name="female">female</string>
+    <string name="menu_Settings">Settings</string>
+    <string name="Queries">Queries</string>
+
+    <string-array name="planets_array">
+        <item>1 Moss Hotel</item>
+        <item>2 Windmill Hotel</item>
+        <item>3 Fancy Hotel</item>
+        <item>4 Grand Palms Hotel</item>
+        <item>5 Zion Hotel</item>
+        <item>6 Lunar Motel</item>
+        <item>7 Rose Cloud Hotel</item>
+        <item>8 Diorama Hotel</item>
+    </string-array>
+    <string name="Q4">Q4:Show all users names and surnames that book on the hotel with the name Rose Cloud Hotel</string>
+    <string name="Q5">Q5:Show all users names and surnames that book a hotel with a name that starts with a L and only those who book package with id 2</string>
+    <string name="Q7">Q6:Show all users surname starts with a "K" and they booked package with id 1</string>
 </resources>

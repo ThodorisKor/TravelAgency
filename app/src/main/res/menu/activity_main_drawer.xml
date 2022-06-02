@@ -20,6 +20,14 @@
             android:id="@+id/nav_Packages"
             android:icon="@drawable/packages"
             android:title="@string/menu_Packages" />
+        <item
+            android:id="@+id/nav_Settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/nav_Query"
+            android:icon="@drawable/ic_question_svgrepo_com"
+            android:title="Queries"/>
 
     </group>
 </menu>

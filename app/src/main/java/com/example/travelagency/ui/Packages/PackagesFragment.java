@@ -1,8 +1,12 @@
 package com.example.travelagency.ui.Packages;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,6 +18,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.travelagency.AboutDatabase.Package;
 import com.example.travelagency.MainActivity;
 import com.example.travelagency.R;
 
@@ -21,6 +26,8 @@ import com.example.travelagency.databinding.FragmentFormBinding;
 import com.example.travelagency.databinding.FragmentPackagesBinding;
 import com.example.travelagency.ui.form.FormFragment;
 import com.example.travelagency.ui.form.FormFragment;
+
+import java.util.List;
 
 public class PackagesFragment extends Fragment {
     private FragmentPackagesBinding binding;
@@ -34,11 +41,33 @@ public class PackagesFragment extends Fragment {
     private CardView card8;
     private CardView card9;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
+     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         binding = FragmentPackagesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+         Button button3 = binding.bt3;
+         button3.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 String res="";
+                 TextView txt = binding.text11;
+                 List<Package> packages = MainActivity.MyDatabase.mydaotemp().getPackage();
+                 for(Package i: packages){
+                     int id = i.getId();
+                     int aid = i.getAid();
+                     int tid = i.getTid();
+                     int duration = i.getDuration();
+                     String date = i.getDate();
+                     int price = i.getPrice();
+                     String type = i.getTriptype();
+                     res = res+ "\n Package Id: " + id + "\n Agency Id: " + aid + "\n Trip Id: " + tid + "\n Duration: " + duration + "\n Date: " + date + "\n Price: " + price + "\n Type: " + type + "\n";
+                     Toast.makeText(getActivity(), "Στοιχεία πακέτων", Toast.LENGTH_SHORT).show();
+                 }
+                 txt.setText(res);
+             }
+         });
         /** Below ,  we make a cardView , thats takes the cardView with id 'card1'
          * We set a onclick listener , that when the user clicks inside the 'card1'
          * To activate the listener and we call the anonymous method "onClick(View view)"
@@ -46,14 +75,21 @@ public class PackagesFragment extends Fragment {
          * And we call the method "replaceFragment('Fragment_Name')" and replaces the current
          * Fragment with the Fragment we want to saw inside the container.Simple */
 
+
         card1 = binding.card1;
         card1.setOnClickListener(new View.OnClickListener() {
+
+            @SuppressLint("ResourceType")
             @Override
             public void onClick(View view) {
                 //Toast.makeText(getActivity(),cardView.isPressed(),Toast.LENGTH_SHORT).show();
                 System.out.println(card1.isPressed());
                 Fragment frag = new FormFragment();
                 replaceFragment(frag);
+
+
+
+
                 //FragmentFormBinding.bind(View.inflate(bd.navForm,R.layout.fragment_form, M\));
             }
         });
@@ -66,6 +102,7 @@ public class PackagesFragment extends Fragment {
             System.out.println(card2.isPressed());
             Fragment frag = new FormFragment();
             replaceFragment(frag);
+
         });
         card3 = binding.card3;
         card3.setOnClickListener(view -> {

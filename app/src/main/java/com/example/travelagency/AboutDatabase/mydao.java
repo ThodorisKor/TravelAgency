@@ -24,6 +24,33 @@ public interface mydao {
     @Query("select * from Package")
     public List<Package> getPackage();
 
+    //Q1
+    @Query("select p.id "+
+            "from Package p,trip t "+
+                "where t.city like 'L%' and p.tid=t.id")
+    public List<Integer> getQuery1();
+
+    //Q2
+    @Query("select p.id " +
+                "from Package p,agency g"+
+                    " where g.name='Ryanair' and p.aid=g.id and p.price=350 "+
+            "UNION "+
+                "select p.id "+
+                    "from Package p,agency g "+
+                        " where g.name='Aegean' and p.aid=g.id and p.price=550 ")
+    public List<Integer> getQuery2();
+
+    //Q3
+    @Query("select distinct p.id "+
+                "from Package p,agency g "+
+                    "where g.name like '_______%' and p.aid=g.id "+
+                       "and p.id in( " +
+                            "select distinct p.id "+
+                                "from Package p,trip t "+
+                                    "where t.country='United Kingdom' and p.tid=t.id)")
+    public List<Integer> getQuery3();
+
+
     @Delete
     public void deleteAgency(Agency agency);
     @Delete

@@ -24,18 +24,24 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import com.example.travelagency.databinding.ActivityMainBinding;
+import com.google.firebase.firestore.FirebaseFirestore;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity    {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
     public static MyDatabase MyDatabase;
+    public static FirebaseFirestore firestoredb;
+
+    //Ta built-in stoixeia pou theloume na exei h vash
 
     Agency agency1 = new Agency(1,"Sky Express","Κατσιμίδη 74");
     Agency agency2 = new Agency(2,"Ryanair","Μαρκ. Μπότσαρη 63");
     Agency agency3 = new Agency(3,"Aegean","Λυκάονος 13");
     Agency agency4 = new Agency(4,"Olympic Air","Βασιλίσσης Όλγας 198");
 
+    //Ta trip einai ta destination nohmatika
     Trip trip1 = new Trip(1,"London","United Kingdom");
     Trip trip2 = new Trip(2,"Paris","France");
     Trip trip3 = new Trip(3,"Bahamas","Caribbean Islands");
@@ -55,7 +61,38 @@ public class MainActivity extends AppCompatActivity    {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MyDatabase= Room.databaseBuilder(getApplicationContext(),MyDatabase.class,"userBD").allowMainThreadQueries().build();
+        MyDatabase= Room.databaseBuilder(getApplicationContext(),MyDatabase.class,"user").allowMainThreadQueries().build();
+        firestoredb = FirebaseFirestore.getInstance();
+
+
+        if(MainActivity.MyDatabase.mydaotemp().getAgency().isEmpty()) {
+            MainActivity.MyDatabase.mydaotemp().addAgency(agency1);
+            MainActivity.MyDatabase.mydaotemp().addAgency(agency2);
+            MainActivity.MyDatabase.mydaotemp().addAgency(agency3);
+            MainActivity.MyDatabase.mydaotemp().addAgency(agency4);
+        }
+        if(MainActivity.MyDatabase.mydaotemp().getTrip().isEmpty()) {
+            MainActivity.MyDatabase.mydaotemp().addTrip(trip1);
+            MainActivity.MyDatabase.mydaotemp().addTrip(trip2);
+            MainActivity.MyDatabase.mydaotemp().addTrip(trip3);
+            MainActivity.MyDatabase.mydaotemp().addTrip(trip4);
+            MainActivity.MyDatabase.mydaotemp().addTrip(trip5);
+        }
+        if(MainActivity.MyDatabase.mydaotemp().getPackage().isEmpty()) {
+            MainActivity.MyDatabase.mydaotemp().addPackage(package1);
+            MainActivity.MyDatabase.mydaotemp().addPackage(package2);
+            MainActivity.MyDatabase.mydaotemp().addPackage(package3);
+            MainActivity.MyDatabase.mydaotemp().addPackage(package4);
+            MainActivity.MyDatabase.mydaotemp().addPackage(package5);
+            MainActivity.MyDatabase.mydaotemp().addPackage(package6);
+            MainActivity.MyDatabase.mydaotemp().addPackage(package7);
+            MainActivity.MyDatabase.mydaotemp().addPackage(package8);
+            MainActivity.MyDatabase.mydaotemp().addPackage(package9);
+        }
+
+
+
+
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -67,7 +104,7 @@ public class MainActivity extends AppCompatActivity    {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_Destinations, R.id.nav_Agencies, R.id.nav_Packages,R.id.nav_Home)
+                R.id.nav_Destinations, R.id.nav_Agencies, R.id.nav_Packages,R.id.nav_Home,R.id.nav_Settings,R.id.nav_Query)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

@@ -34,6 +34,7 @@ public class Package {
         this.aid = aid;
         this.tid = tid;
         this.date = date;
+        this.duration = duration;
         this.price = price;
         this.triptype=triptype;
     }

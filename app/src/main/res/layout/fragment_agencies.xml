@@ -74,7 +74,27 @@
                     android:layout_width="362dp"
                     android:layout_height="190dp"
                     android:src="@drawable/aegean" />
+
             </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:insetLeft="5dp"
+                android:scaleX="1"
+                android:text="Show Agency Details" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="serif"
+                android:textColor="#3C3434"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>

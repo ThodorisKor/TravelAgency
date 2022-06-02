@@ -202,6 +202,22 @@
                     android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:insetLeft="5dp"
+                android:text="Show Trip Details" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:textColor="#453A3A"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 

@@ -26,7 +26,6 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:hint="@string/Name"
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -35,12 +34,12 @@
                     android:background="@drawable/edittextradius"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="@string/Name"
                     android:inputType="textPersonName"
                     android:textColor="#143d59"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <EditText
-                    android:hint="@string/Surname"
                     android:id="@+id/surname"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -48,6 +47,7 @@
                     android:background="@drawable/edittextradius"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="@string/Surname"
                     android:inputType="textPersonName"
                     android:textColor="#2C4251" />
             </LinearLayout>
@@ -58,33 +58,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:orientation="vertical">
 
-                <TextView
-
-                    android:id="@+id/textView16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/gender" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/male"
-                        android:layout_width="200dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/male" />
-
-                    <RadioButton
-                        android:id="@+id/female"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/female" />
-                </RadioGroup>
-
                 <EditText
-                    android:hint="@string/Email"
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -92,22 +66,100 @@
                     android:background="@drawable/edittextradius"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="@string/Email"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
                     android:textColor="#143d59" />
 
                 <EditText
-                    android:hint="@string/packagecode"
+
                     android:id="@+id/packagecode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/edittextradius"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="@string/packagecode"
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
                     android:textColor="#143d59" />
+
             </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/borderline"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0B7A6A"
+                    android:fontFamily="serif-monospace"
+                    android:text="Submit Client"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/updateClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#5E34BD"
+                    android:fontFamily="serif-monospace"
+                    android:text="Update Client"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/deleteClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#ED1111"
+                android:fontFamily="serif-monospace"
+                android:text="Delete Client"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/edittextradius"
+                android:ems="10"
+                android:hint=" Enter the surname of the client you want to delete"
+                android:inputType="textPersonName"
+                android:textColor="#D1C4C4"
+                android:textColorHighlight="#CCA7A7"
+                android:textColorHint="#4C4747"
+                android:visibility="invisible"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/delete2"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:backgroundTint="#ED1111"
+                android:fontFamily="serif-monospace"
+                android:text="Delete"
+
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                android:visibility="invisible" />
 
         </LinearLayout>
     </ScrollView>

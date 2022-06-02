@@ -3,7 +3,7 @@ package com.example.travelagency.AboutDatabase;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "agency")
 
 public class Agency {
   @PrimaryKey
